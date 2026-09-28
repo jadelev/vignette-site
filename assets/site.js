@@ -57,3 +57,15 @@
       });
   });
 })();
+
+// Logo: on the homepage, glide back to the very top; elsewhere it opens the homepage
+(function () {
+  document.querySelectorAll('a.brand').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (!document.querySelector('.hero')) return;
+      e.preventDefault();
+      history.replaceState(null, '', location.pathname);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+})();
