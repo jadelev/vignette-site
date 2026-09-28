@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enquire — Vignette</title>
+<meta name="description" content="Tell us what you’re dreaming up. Vignette takes on a small number of weddings, retreats and intimate gatherings each year.">
+<meta property="og:image" content="assets/logo/social-share-1200x630.png">
+<link rel="icon" type="image/png" href="assets/logo/favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+    <svg width="22" height="12" viewBox="0 0 22 12" aria-hidden="true"><path d="M0 1h22M0 11h22" stroke="currentColor" stroke-width="1"/></svg>
+  </button>
+  <nav class="nav" id="site-nav" aria-label="Main">
+    <a href="./#work">Work</a>
+    <a href="./#approach">Approach</a>
+    <a href="./#studio">Studio</a>
+  </nav>
+  <a class="brand" href="./" aria-label="Vignette home"><img src="assets/logo/vignette-lockup-ink.svg" alt="Vignette"></a>
+  <span></span>
+</header>
+
+<main class="enquire wrap">
+  <div class="enquire-intro center">
+    <span class="label">Enquire</span>
+    <h1 class="h1">Tell us what you’re <em>dreaming up</em></h1>
+    <p class="body">We take on a small number of gatherings each year so every one receives our full attention. If it feels like a fit, we’ll be in touch within three days to arrange a first conversation.</p>
+    <p class="small" style="font-size: 13px">Our full-service studio fee starts at 20% of the total investment in your gathering.</p>
+  </div>
+
+  <form class="enquiry" id="enquiry" action="https://formsubmit.co/hello@jadelevinson.com" method="POST" novalidate>
+    <input type="hidden" name="_subject" value="New Vignette enquiry">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off">
+
+    <div class="row row-2">
+      <label class="field"><span>Your name</span><input type="text" name="name" autocomplete="name" required></label>
+      <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+    </div>
+
+    <fieldset>
+      <legend>What are you gathering for?</legend>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="gathering" value="Wedding or ceremony" required><span>Wedding or ceremony</span></label>
+        <label class="choice"><input type="radio" name="gathering" value="Immersive dinner"><span>Immersive dinner</span></label>
+        <label class="choice"><input type="radio" name="gathering" value="Retreat"><span>Retreat</span></label>
+        <label class="choice"><input type="radio" name="gathering" value="Intimate festival"><span>Intimate festival</span></label>
+        <label class="choice"><input type="radio" name="gathering" value="Brand gathering"><span>Brand gathering</span></label>
+        <label class="choice"><input type="radio" name="gathering" value="Something else"><span>Something else</span></label>
+      </div>
+    </fieldset>
+
+    <div class="row row-3">
+      <label class="field"><span>Date or season</span><input type="text" name="date" placeholder="e.g. late summer 2027"></label>
+      <label class="field"><span>Where in the world</span><input type="text" name="location" placeholder="Or still dreaming"></label>
+      <label class="field"><span>Guest count</span><input type="text" name="guests" inputmode="numeric"></label>
+    </div>
+
+    <fieldset>
+      <legend>Total investment for the gathering</legend>
+      <p class="hint">Everything included: venue, food, design, production and our fee.</p>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="budget" value="Under $75K" required><span>Under $75K</span></label>
+        <label class="choice"><input type="radio" name="budget" value="$75K–$150K"><span>$75K–$150K</span></label>
+        <label class="choice"><input type="radio" name="budget" value="$150K–$350K"><span>$150K–$350K</span></label>
+        <label class="choice"><input type="radio" name="budget" value="$350K–$1M"><span>$350K–$1M</span></label>
+        <label class="choice"><input type="radio" name="budget" value="$1M+"><span>$1M+</span></label>
+      </div>
+    </fieldset>
+
+    <label class="field"><span>How do you want people to feel when they leave?</span><textarea name="feeling" rows="3"></textarea></label>
+    <label class="field"><span>What edge would you like to test?</span><textarea name="edge" rows="3" placeholder="The tradition you want to break, the thing nobody has done at a gathering like yours…"></textarea></label>
+    <label class="field"><span>How did you find us?</span><input type="text" name="source"></label>
+
+    <div class="submit-row">
+      <button type="submit" class="btn btn--solid">Send enquiry</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      <span class="small" style="font-size: 13px; color: #7A7168">Everything you share stays with us.</span>
+    </div>
+  </form>
+
+  <div class="thanks center" id="thanks" hidden>
+    <h2 class="h1"><em>Received,</em> with care</h2>
+    <p class="body">Thank you for trusting us with the beginnings of this. We read every enquiry closely and will be in touch within three days.</p>
+    <a class="link-line" href="./">Return to the studio</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="./" aria-label="Vignette home"><img src="assets/logo/vignette-lockup-ink.svg" alt="Vignette"></a>
+  <span class="caption">Rituals · Revelry · Reunion</span>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
