@@ -320,3 +320,14 @@ fieldset legend { padding: 0; margin-bottom: 18px; }
   .row-2, .row-3 { grid-template-columns: 1fr; gap: 44px; }
   .choice span { padding: 12px 16px; min-height: 44px; }
 }
+
+/* Archive drop-down */
+.archive-more { max-width: 980px; margin: 0 auto; }
+.archive-more summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: center; padding: 8px 0 4px;
+}
+.archive-more summary::-webkit-details-marker { display: none; }
+.archive-more summary .link-line::after { content: "  +"; }
+.archive-more[open] summary .link-line::after { content: "  −"; }
+.archive-more summary:focus-visible { outline: 1px solid var(--tan); outline-offset: 4px; }
+.archive-more .archive-list { margin-top: 40px; }
