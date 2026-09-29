@@ -173,10 +173,10 @@ h1, h2, h3, p { margin: 0; }
 .quote-block .quote { max-width: 900px; }
 
 /* Studio */
-.studio { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 40px; align-items: start; }
-.studio-photo { grid-column: 1 / 6; }
-.studio-photo .photo { height: 700px; object-position: center 35%; }
-.studio-text { grid-column: 7 / 13; padding-top: 60px; display: flex; flex-direction: column; gap: 28px; }
+.studio { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 40px; align-items: center; }
+.studio-photo { grid-column: 1 / 7; }
+.studio-photo .photo { height: auto; aspect-ratio: 5 / 4; object-position: center; }
+.studio-text { grid-column: 7 / 13; padding-left: 40px; display: flex; flex-direction: column; gap: 28px; }
 .studio-text .h1 { font-size: 52px; }
 .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--rule); padding-top: 24px; }
 .stats div { display: flex; flex-direction: column; gap: 6px; }
@@ -260,8 +260,7 @@ fieldset legend { padding: 0; margin-bottom: 18px; }
   .feature-text { grid-column: 1 / 13; margin-top: 28px; }
   .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 56px; }
   .studio-photo, .studio-text { grid-column: 1 / 13; }
-  .studio-text { padding-top: 48px; }
-  .studio-photo .photo { height: 640px; }
+  .studio-text { padding: 48px 0 0; }
   .banner { height: 620px; }
 }
 
