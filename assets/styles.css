@@ -148,8 +148,8 @@ h1, h2, h3, p { margin: 0; }
 .placeholder { background: #DDD3C6; }
 
 /* Archive */
-.archive-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; margin-bottom: 56px; }
-.archive-photos .photo { height: 420px; }
+.archive-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-bottom: 56px; }
+.archive-photos .photo { height: 340px; }
 .archive-list {
   max-width: 980px; margin: 0 auto; padding: 0; list-style: none;
   display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 64px; font-size: 15px;
